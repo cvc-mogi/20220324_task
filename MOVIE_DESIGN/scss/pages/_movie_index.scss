@@ -1,0 +1,21 @@
+.movie_list{
+    border-collapse:collapse;
+    tr{
+        border-bottom: solid 1px #eee;
+        th,td{
+            padding: 15px 0;
+            padding-right: 1rem;
+            text-align: center;
+        }
+    }
+    .movie_list_num{
+        padding-left: 1rem;
+    }
+    .movie_list_title{
+        cursor : pointer;
+        border-bottom: 2px dotted #000;
+    }
+    .movie_list_running_time{
+        width: 10rem;
+    }
+}
