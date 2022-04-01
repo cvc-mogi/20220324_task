@@ -1,0 +1,13 @@
+.movie_detail{
+    border-collapse:collapse;
+    tr{
+        border-bottom: solid 1px #eee;
+        th{
+            padding-left: 1rem;
+        }
+        th,td{
+            padding: 15px 0;
+            padding-right: 1rem;
+        }
+    }
+}

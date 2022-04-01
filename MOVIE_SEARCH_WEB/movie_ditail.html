@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sample</title>
+    <link href="../MOVIE_DESIGN/css/common.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main" id="app">
+        <table class="movie_detail">
+            <tr>
+                <th>No.</th><td>{{ param }}</td>
+            </tr>
+            <tr>
+                <th>TITLE</th><td>{{ json[param].title }}</td>
+            </tr>
+            <tr>
+                <th>YEAR</th><td>{{ json[param].year }}</td>
+            </tr>
+            <tr>
+                <th>INFO</th>
+            </tr>
+            <tr>
+                <th>DIRECTORS</th><td><p v-for="(directors, index) in json[param].info.directors">{{ directors }}</p></td>
+            </tr>
+            <tr>
+                <th>RELEASE-DATE</th><td>{{ json[param].info.release_date }}</td>
+            </tr>
+            <tr>
+                <th>RATING</th><td>{{ json[param].info.rating }}</td>
+            </tr>
+            <tr>
+                <th>GENRES</th><td>{{ json[param].info.genres }}</td>
+            </tr>
+            <tr>
+                <th>PLOT</th><td>{{ json[param].info.plot }}</td>
+            </tr>
+            <tr>
+                <th>RANK</th><td>{{ json[param].info.rank }}</td>
+            </tr>
+            <tr>
+                <th>RUNNING-TIME</th><td>{{ json[param].info.running_time_secs }}</td>
+            </tr>
+            <tr>
+                <th>ACTORS</th><td>{{ json[param].info.actors }}</td>
+            </tr>
+        </table>
+        <a href="movie_index.html">return</p>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script type="text/javascript" src="js/movie.js"></script>
+</body>

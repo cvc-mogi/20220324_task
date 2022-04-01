@@ -1,0 +1,12 @@
+課題としては
+HTML
+CSS（できればSASSを使用する）
+JS（vue.jsを使用する）
+JSでこのURL(https://raw.githubusercontent.com/cvc-ishikura/training2/main/sample.json)をfetchし、返ってきたJSONの情報を整理し、テーブルで一覧表示してみてください。
+HTMLCSSは好きにデザインしてみてください。イケてる感じにできたらベスト！
+SASSに関してはこちらで環境設定できると思います。MARR用になっているのでフォルダ等は別の場所に作成したり、適宜読み替えてください。
+https://cview.backlog.jp/alias/wiki/1075335518
+
+
+課題内容URL
+https://cvcmadbweb.slack.com/archives/D027429E76D/p1648108072008339

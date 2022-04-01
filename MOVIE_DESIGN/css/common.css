@@ -1,0 +1,25 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/common.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../scss/pages/_movie_index.scss */
+.movie_list { border-collapse: collapse; }
+/* line 3, ../scss/pages/_movie_index.scss */
+.movie_list tr { border-bottom: solid 1px #eee; }
+/* line 5, ../scss/pages/_movie_index.scss */
+.movie_list tr th, .movie_list tr td { padding: 15px 0; padding-right: 1rem; text-align: center; }
+/* line 11, ../scss/pages/_movie_index.scss */
+.movie_list .movie_list_num { padding-left: 1rem; }
+/* line 14, ../scss/pages/_movie_index.scss */
+.movie_list .movie_list_title { cursor: pointer; border-bottom: 2px dotted #000; }
+/* line 18, ../scss/pages/_movie_index.scss */
+.movie_list .movie_list_running_time { width: 10rem; }
+
+/* line 1, ../scss/pages/_movie_detail.scss */
+.movie_detail { border-collapse: collapse; }
+/* line 3, ../scss/pages/_movie_detail.scss */
+.movie_detail tr { border-bottom: solid 1px #eee; }
+/* line 5, ../scss/pages/_movie_detail.scss */
+.movie_detail tr th { padding-left: 1rem; }
+/* line 8, ../scss/pages/_movie_detail.scss */
+.movie_detail tr th, .movie_detail tr td { padding: 15px 0; padding-right: 1rem; }
+
+/* line 12, ../scss/common.scss */
+.main { width: 1000px; margin: auto; }
