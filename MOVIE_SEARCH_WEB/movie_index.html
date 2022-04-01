@@ -13,7 +13,7 @@
                 <th class="movie_list_num">No.</th><th>TITLE</th><th>YEAR</th><th>GENRES</th><th class="movie_list_running_time">RUNNING-TIME</th><th>RATING</th>
             </tr>
             <tr v-for="(jsonItem, index) in json">
-                <td class="movie_list_num">{{ index+1 }}</td><td ><a class="movie_list_title" @click="DetailUrl(index)">{{ jsonItem.title }}</a></td><td>{{ emptyJug(jsonItem.year) }}</td><td><p  v-for="genres in jsonItem.info.genres">{{ emptyJug(genres) }}</p></td><td class="movie_list_running_time">{{ runningTime(jsonItem.info.running_time_secs) }}</td><td>{{ emptyJug(jsonItem.info.rating) }}</td>
+                <td class="movie_list_num">{{ index+1 }}</td><td ><a class="movie_list_title" @click="detailUrl(index)">{{ jsonItem.title }}</a></td><td>{{ emptyJug(jsonItem.year) }}</td><td><p  v-for="genres in jsonItem.info.genres">{{ emptyJug(genres) }}</p></td><td class="movie_list_running_time">{{ runningTime(jsonItem.info.running_time_secs) }}</td><td>{{ emptyJug(jsonItem.info.rating) }}</td>
             </tr>
         </table>
     </div>

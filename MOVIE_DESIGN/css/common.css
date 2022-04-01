@@ -2,7 +2,7 @@
 /* line 1, ../scss/pages/_movie_index.scss */
 .movie_list { border-collapse: collapse; }
 /* line 3, ../scss/pages/_movie_index.scss */
-.movie_list tr { border-bottom: solid 1px #eee; }
+.movie_list tr { border-bottom: solid 2px #c43838; }
 /* line 5, ../scss/pages/_movie_index.scss */
 .movie_list tr th, .movie_list tr td { padding: 15px 0; padding-right: 1rem; text-align: center; }
 /* line 11, ../scss/pages/_movie_index.scss */
@@ -15,11 +15,14 @@
 /* line 1, ../scss/pages/_movie_detail.scss */
 .movie_detail { border-collapse: collapse; }
 /* line 3, ../scss/pages/_movie_detail.scss */
-.movie_detail tr { border-bottom: solid 1px #eee; }
+.movie_detail tr { border-bottom: solid 2px #c43838; }
 /* line 5, ../scss/pages/_movie_detail.scss */
-.movie_detail tr th { padding-left: 1rem; }
-/* line 8, ../scss/pages/_movie_detail.scss */
-.movie_detail tr th, .movie_detail tr td { padding: 15px 0; padding-right: 1rem; }
+.movie_detail tr th { padding-left: 1rem; text-align: left; }
+/* line 9, ../scss/pages/_movie_detail.scss */
+.movie_detail tr th, .movie_detail tr td { padding-right: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
+
+/* line 16, ../scss/pages/_movie_detail.scss */
+.back_button { text-decoration: none; font-weight: bold; font-size: 15pt; color: #000; padding-bottom: 1rem; }
 
 /* line 12, ../scss/common.scss */
 .main { width: 1000px; margin: auto; }

@@ -1,13 +1,22 @@
 .movie_detail{
     border-collapse:collapse;
     tr{
-        border-bottom: solid 1px #eee;
+        border-bottom: solid 2px rgb(196, 56, 56);
         th{
             padding-left: 1rem;
+            text-align: left;
         }
         th,td{
-            padding: 15px 0;
             padding-right: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
     }
+}
+.back_button{
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 15pt; 
+    color: #000;
+    padding-bottom: 1rem;
 }

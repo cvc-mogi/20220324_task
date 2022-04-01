@@ -1,14 +1,3 @@
-var sampleChild = {
-    template: `<p>
-                    {{message}}
-                </p>`,
-    data: function() {
-        return {
-        message: 'Hello'
-        }
-    }
-    };
-
 var app = new Vue({
     el: '#app',
     data: {
@@ -42,11 +31,24 @@ var app = new Vue({
             return value
         },
         // 詳細画面へ遷移
-        DetailUrl: function(index) {
+        detailUrl: function(index) {
             location.href = 'movie_ditail.html?no=' + index;
         },
+        formatDate: function(data, format){
+            if (data == null || data == '') {
+                return '';
+            }
+
+            const week = [ "日", "月", "火", "水", "木", "金", "土" ];
+            let date = new Date(data);
+            format = (format == null) ? 'YYYY/MM/DD' : format;
+            format = format.replace('YYYY', date.getFullYear());
+            format = format.replace('MM', ('0' + (date.getMonth() + 1)).slice(-2));
+            format = format.replace('DD', ('0' + date.getDate()).slice(-2));
+
+            return format;
+        }
     },
-    
 });
 
 function getParam(name, url) {
